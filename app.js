@@ -4,7 +4,7 @@ const app = express();
 // Middleware para redirecionar todas as requisições
 app.use((req, res) => {
   // Constrói a nova URL com www, mantendo o caminho e os parâmetros
-  const newUrl = "https://www.pazbibleschool.com" + req.originalUrl;
+  const newUrl = "https://pazbibleschool.com" + req.originalUrl;
   res.redirect(301, newUrl); // Redireciona permanentemente com status 301
 });
 
